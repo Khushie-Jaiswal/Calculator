@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+
+<body>
+    <div class="heading">
+        <span id="h1">CALCULATOR</span>
+        <span id="h3">Play with numbers</span>
+    </div>
+    <div class="container">
+        <button id="clrBTn" class="btn" onclick="clears()">CLEAR</button>
+        <div class="input" id="input">
+            <label for="ta1" id="l1" class="num">Enter first number</label>
+            <button id="b1" class="minus" onclick="negate()">Negative</button>
+            <input id="ta1" type="number" class="num" placeholder="First number" onfocus="setCurrentInput(1)">
+            <label for="ta2" id="l2" class="num">Enter second number</label>
+            <button id="b2" class="minus" onclick="negate()">Negative</button>
+            <input id="ta2" type="number" class="num" placeholder="Second number" onfocus="setCurrentInput(2)">
+        </div>
+        <div class="result" id="result">
+            <label for="res" id="r">RESULT</label>
+            <output id="res"></output>
+        </div>
+        <div class="keypad" id="keypad">
+            <div class="row">
+                <button class="dig" onclick="enter('1')">1</button>
+                <button class="dig" onclick="enter('2')">2</button>
+                <button class="dig" onclick="enter('3')">3</button>
+            </div>
+            <div class="row">
+                <button class="dig" onclick="enter('4')">4</button>
+                <button class="dig" onclick="enter('5')">5</button>
+                <button class="dig" onclick="enter('6')">6</button>
+            </div>
+            <div class="row">
+                <button class="dig" onclick="enter('7')">7</button>
+                <button class="dig" onclick="enter('8')">8</button>
+                <button class="dig" onclick="enter('9')">9</button>
+            </div>
+            <div class="row">
+                <button class="dig" onclick="enter('0')">0</button>
+                <button class="dig" onclick="enter('.')">.</button>
+                <button class="dig" onclick="back()">←</button>
+            </div>
+        </div>
+        <div class="operations" id="operations">
+            <button id="a" class="btn">Addition</button>
+            <button id="s" class="btn">Subtraction</button>
+            <button id="m" class="btn">Multiplication</button>
+            <button id="d" class="btn">Division</button>
+        </div>
+    </div>
+
+    <script src="cal.js"></script>
+
+</body>
+
+</html>

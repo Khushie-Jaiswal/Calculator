@@ -1,0 +1,149 @@
+body {
+    font-size: 20px;
+    background-color: rgba(94, 94, 243, 0.231);
+}
+
+.heading {
+    background-color: rgb(94, 94, 243);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    margin: 10px 0px;
+}
+
+#h1 {
+    font-size: 55px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#h3 {
+    font-size: 30px;
+}
+
+.container {
+    padding: 10px;
+    display: grid;
+    grid-template-areas:
+        'clr clr res res'
+        'in in res res'
+        'key key ops ops'
+    ;
+}
+
+.keypad {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.operations {
+    margin-top: 20px;
+    justify-content: center;
+}
+
+#clrBtn {
+    grid-area: clr;
+}
+
+.btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 5px 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#input {
+    grid-area: in;
+    display: grid;
+    grid-template-areas:
+        'l1 t1 b1'
+        'l2 t2 b2';
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#result {
+    grid-area: res;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+
+#keypad {
+    grid-area: key;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.dig {
+    padding: 5px;
+    margin: 2px;
+    height: 50px;
+    width: 50px;
+}
+
+#operations {
+    grid-area: ops;
+    display: flex;
+    flex-direction: column;
+}
+
+#r {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#res {
+    background-color: rgb(137, 148, 151);
+    padding: 10px 20px;
+    margin: auto;
+    font-size: 40px;
+    height: 50px;
+    width: 400px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+#l1 {
+    grid-area: l1;
+}
+
+#l2 {
+    grid-area: l2;
+}
+
+.minus {
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    width: 80px;
+}
+
+#ta1 {
+    grid-area: t1;
+    margin-left: 100px;
+}
+
+#ta2 {
+    grid-area: t2;
+    margin-left: 100px;
+}
+
+#b1 {
+    grid-area: b1;
+}
+
+#b2 {
+    grid-area: b2;
+}
+
+.num {
+    margin: 5px;
+}
